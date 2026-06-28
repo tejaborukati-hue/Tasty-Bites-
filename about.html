@@ -1,45 +1,116 @@
-<header>
-    <div class="logo">🍴 Foodie</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Foodie</title>
 
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#order">Order</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-<!-- About -->
-<section class="about" id="about">
-    <h2>About Us</h2>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
-    <p>
-        Welcome to Foodie Restaurant! We serve delicious meals prepared with
-        fresh ingredients and lots of love. Our mission is to make every meal
-        memorable by offering delicious food, excellent service, and a warm
-        dining experience for every customer.
-    </p>
-</section>
-<!-- Footer -->
-<footer>
-    <div class="footer-content">
-        <h3>🍴 Foodie Restaurant</h3>
-        <p>Serving delicious food with love and quality.</p>
+        body {
+            background-color: #f8f8f8;
+        }
 
-        <div class="social-links">
-            <a href="#">Facebook</a> |
-            <a href="#">Instagram</a> |
-            <a href="#">Twitter</a>
-        </div>
+        /* Header */
+        header {
+            background-color: #ff4d4d;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
 
-        <p>&copy; 2026 Foodie Restaurant | Designed by Sai Tejaswi</p>
-    </div>
-</footer>
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
 
-<script src="script.js"></script>
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* About Section */
+        .about {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .about h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">🍴 Foodie</div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <h1>About Us</h1>
+        <p>
+            Welcome to Foodie 🍽️, your favorite destination for delicious meals and quick online ordering.
+            We believe in serving fresh, tasty, and hygienic food made with love. Our mission is to bring
+            happiness to your plate with every bite. Explore our menu and enjoy a great food experience!
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Foodie. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
