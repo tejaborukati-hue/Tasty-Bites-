@@ -1,57 +1,151 @@
-<header>
-    <div class="logo">🍴 Foodie</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Foodie</title>
 
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#order">Order</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-<!-- Contact -->
-<section class="contact" id="contact">
-    <h2>Contact Us</h2>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
-    <form>
-        <input type="text" placeholder="Your Name" required>
+        body {
+            background-color: #f8f8f8;
+        }
 
-        <input type="email" placeholder="Your Email" required>
+        /* Header */
+        header {
+            background-color: #ff4d4d;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
 
-        <input type="tel" placeholder="Your Phone Number" required>
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
 
-        <textarea placeholder="Your Message" rows="5" required></textarea>
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
 
-        <button type="submit">Send Message</button>
-    </form>
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+        }
 
-    <div class="contact-info">
-        <p><strong>📍 Address:</strong> 123 Food Street, Vijayawada, Andhra Pradesh</p>
-        <p><strong>📞 Phone:</strong> +91 98765 43210</p>
-        <p><strong>📧 Email:</strong> foodie@example.com</p>
-        <p><strong>🕒 Timings:</strong> 10:00 AM – 10:00 PM</p>
-    </div>
-</section>
-<!-- Footer -->
-<footer>
-    <div class="footer-content">
-        <h3>🍴 Foodie Restaurant</h3>
-        <p>Serving delicious food with love and quality.</p>
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
 
-        <div class="social-links">
-            <a href="#">Facebook</a> |
-            <a href="#">Instagram</a> |
-            <a href="#">Twitter</a>
+        /* Contact Section */
+        .contact {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .contact h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .contact p {
+            margin-bottom: 30px;
+            color: #666;
+        }
+
+        .contact-form {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .contact-form button:hover {
+            background-color: #e60000;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">🍴 Foodie</div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h1>Contact Us</h1>
+        <p>If you have any questions, feel free to reach out to us!</p>
+
+        <div class="contact-form">
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </div>
+    </section>
 
-        <p>&copy; 2026 Foodie Restaurant | Designed by Sai Tejaswi</p>
-    </div>
-</footer>
-
-<script src="script.js"></script>
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Foodie. All Rights Reserved.</p>
+    </footer>
 
 </body>
-</html>
+    </html>
