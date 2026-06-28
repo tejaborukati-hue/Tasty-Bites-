@@ -1,0 +1,45 @@
+<header>
+    <div class="logo">🍴 Foodie</div>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#order">Order</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- About -->
+<section class="about" id="about">
+    <h2>About Us</h2>
+
+    <p>
+        Welcome to Foodie Restaurant! We serve delicious meals prepared with
+        fresh ingredients and lots of love. Our mission is to make every meal
+        memorable by offering delicious food, excellent service, and a warm
+        dining experience for every customer.
+    </p>
+</section>
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <h3>🍴 Foodie Restaurant</h3>
+        <p>Serving delicious food with love and quality.</p>
+
+        <div class="social-links">
+            <a href="#">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">Twitter</a>
+        </div>
+
+        <p>&copy; 2026 Foodie Restaurant | Designed by Sai Tejaswi</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
