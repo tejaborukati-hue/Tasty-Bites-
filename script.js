@@ -1,37 +1,38 @@
-// Welcome message
-window.onload = function () {
-    console.log("Welcome to Foodie Restaurant!");
-};
-
-// Order function
-function placeOrder(item) {
-    alert("✅ Thank you! Your order for " + item + " has been placed successfully.");
-}
-
-// Contact form
 document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector("form");
 
-    form.addEventListener("submit", function (e) {
-        e.preventDefault();
+    // 1. Order Now buttons in menu page
+    const orderButtons = document.querySelectorAll("button");
 
-        alert("📩 Thank you for contacting us! We will get back to you soon.");
-
-        form.reset();
-    });
-});
-
-// Smooth scrolling
-document.querySelectorAll('nav a').forEach(link => {
-    link.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        const target = document.querySelector(this.getAttribute('href'));
-
-        if (target) {
-            target.scrollIntoView({
-                behavior: "smooth"
+    orderButtons.forEach(button => {
+        if (button.innerText === "Order Now") {
+            button.addEventListener("click", function () {
+                alert("Item added! Go to Order page 🛒");
+                window.location.href = "order.html";
             });
         }
     });
+
+
+    // 2. Order form submission
+    const orderForm = document.querySelector(".order-form form");
+
+    if (orderForm) {
+        orderForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const name = orderForm.querySelector("input[type='text']").value;
+            const phone = orderForm.querySelector("input[type='tel']").value;
+            const food = orderForm.querySelector("select").value;
+            const quantity = orderForm.querySelector("input[type='number']").value;
+
+            if (name && phone && food && quantity) {
+                alert(`🎉 Order placed successfully!\n\nName: ${name}\nFood: ${food}\nQuantity: ${quantity}`);
+
+                orderForm.reset();
+            } else {
+                alert("Please fill all fields!");
+            }
+        });
+    }
+
 });
