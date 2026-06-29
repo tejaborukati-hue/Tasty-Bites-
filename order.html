@@ -3,126 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order Online - Foodie</title>
+    <title>Tasty Bites | Order</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            background-color: #f8f8f8;
-        }
-
-        /* Header */
-        header {
-            background-color: #ff4d4d;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: white;
-        }
-
-        .logo {
-            font-size: 22px;
-            font-weight: bold;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-weight: 500;
-        }
-
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-
-        /* Order Section */
-        .order {
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .order h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
-            color: #333;
-        }
-
-        .order p {
-            color: #666;
-            margin-bottom: 30px;
-        }
-
-        .order-form {
-            max-width: 500px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-
-        .order-form input,
-        .order-form select,
-        .order-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .order-form button {
-            width: 100%;
-            padding: 10px;
-            background-color: #ff4d4d;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        .order-form button:hover {
-            background-color: #e60000;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 50px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <!-- Header -->
     <header>
-        <div class="logo">🍴 Foodie</div>
+        <div class="logo">🍴 Tasty Bites</div>
 
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="menu.html">Menu</a></li>
-                <li><a href="order.html">Order</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="order.html">Order</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -130,37 +27,43 @@
 
     <!-- Order Section -->
     <section class="order">
-        <h1>Order Online 🛒</h1>
-        <p>Fill the form and get your food delivered fast 🚀</p>
+        <h1>Order Online</h1>
+        <p>Fill in the form below to place your order.</p>
 
-        <div class="order-form">
-            <form>
-                <input type="text" placeholder="Your Name" required>
+        <form>
+            <label for="name">Full Name</label><br>
+            <input type="text" id="name" placeholder="Enter your name" required><br><br>
 
-                <input type="tel" placeholder="Phone Number" required>
+            <label for="phone">Phone Number</label><br>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required><br><br>
 
-                <select required>
-                    <option value="">Select Food Item</option>
-                    <option>Pizza</option>
-                    <option>Burger</option>
-                    <option>Pasta</option>
-                    <option>Fries</option>
-                    <option>Cold Drink</option>
-                </select>
+            <label for="food">Select Food</label><br>
+            <select id="food" required>
+                <option value="">-- Choose an Item --</option>
+                <option>Margherita Pizza</option>
+                <option>Chicken Burger</option>
+                <option>White Sauce Pasta</option>
+                <option>Veg Salad</option>
+                <option>French Fries</option>
+                <option>Cold Coffee</option>
+            </select><br><br>
 
-                <input type="number" placeholder="Quantity" min="1" required>
+            <label for="quantity">Quantity</label><br>
+            <input type="number" id="quantity" min="1" value="1" required><br><br>
 
-                <textarea rows="4" placeholder="Full Address" required></textarea>
+            <label for="address">Delivery Address</label><br>
+            <textarea id="address" rows="4" placeholder="Enter your address" required></textarea><br><br>
 
-                <button type="submit">Place Order</button>
-            </form>
-        </div>
+            <button type="submit">Place Order</button>
+        </form>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2026 Foodie. All Rights Reserved.</p>
+        <p>&copy; 2026 Tasty Bites. All Rights Reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
