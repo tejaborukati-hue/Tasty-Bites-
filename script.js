@@ -1,38 +1,31 @@
-document.addEventListener("DOMContentLoaded", function () {
+// Welcome message
+console.log("Welcome to Tasty Bites!");
 
-    // 1. Order Now buttons in menu page
-    const orderButtons = document.querySelectorAll("button");
+// Show message when Order form is submitted
+const orderForm = document.querySelector(".order form");
 
-    orderButtons.forEach(button => {
-        if (button.innerText === "Order Now") {
-            button.addEventListener("click", function () {
-                alert("Item added! Go to Order page 🛒");
-                window.location.href = "order.html";
-            });
-        }
+if (orderForm) {
+    orderForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+        alert("🎉 Your order has been placed successfully!");
+        orderForm.reset();
     });
+}
 
+// Show message when Contact form is submitted
+const contactForm = document.querySelector(".contact form");
 
-    // 2. Order form submission
-    const orderForm = document.querySelector(".order-form form");
+if (contactForm) {
+    contactForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+        alert("✅ Thank you! Your message has been sent.");
+        contactForm.reset();
+    });
+}
 
-    if (orderForm) {
-        orderForm.addEventListener("submit", function (e) {
-            e.preventDefault();
-
-            const name = orderForm.querySelector("input[type='text']").value;
-            const phone = orderForm.querySelector("input[type='tel']").value;
-            const food = orderForm.querySelector("select").value;
-            const quantity = orderForm.querySelector("input[type='number']").value;
-
-            if (name && phone && food && quantity) {
-                alert(`🎉 Order placed successfully!\n\nName: ${name}\nFood: ${food}\nQuantity: ${quantity}`);
-
-                orderForm.reset();
-            } else {
-                alert("Please fill all fields!");
-            }
-        });
+// Welcome popup when Home page opens
+window.addEventListener("load", function() {
+    if (document.querySelector(".hero")) {
+        alert("🍴 Welcome to Tasty Bites Restaurant!");
     }
-
 });
