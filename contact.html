@@ -3,125 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Foodie</title>
+    <title>Tasty Bites | Contact</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            background-color: #f8f8f8;
-        }
-
-        /* Header */
-        header {
-            background-color: #ff4d4d;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: white;
-        }
-
-        .logo {
-            font-size: 22px;
-            font-weight: bold;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-weight: 500;
-        }
-
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-
-        /* Contact Section */
-        .contact {
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .contact h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-            color: #333;
-        }
-
-        .contact p {
-            margin-bottom: 30px;
-            color: #666;
-        }
-
-        .contact-form {
-            max-width: 500px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .contact-form button {
-            width: 100%;
-            padding: 10px;
-            background-color: #ff4d4d;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        .contact-form button:hover {
-            background-color: #e60000;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 50px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <!-- Header -->
     <header>
-        <div class="logo">🍴 Foodie</div>
+        <div class="logo">🍴 Tasty Bites</div>
 
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="menu.html">Menu</a></li>
-                <li><a href="order.html">Order</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="order.html">Order</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -130,22 +28,33 @@
     <!-- Contact Section -->
     <section class="contact">
         <h1>Contact Us</h1>
-        <p>If you have any questions, feel free to reach out to us!</p>
+        <p>We'd love to hear from you!</p>
 
-        <div class="contact-form">
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea rows="5" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
+        <form>
+            <label for="name">Name</label><br>
+            <input type="text" id="name" placeholder="Enter your name" required><br><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" placeholder="Enter your email" required><br><br>
+
+            <label for="message">Message</label><br>
+            <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea><br><br>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <h2>Restaurant Details</h2>
+        <p><strong>📍 Address:</strong> 123 Food Street, Vijayawada</p>
+        <p><strong>📞 Phone:</strong> +91 98765 43210</p>
+        <p><strong>📧 Email:</strong> info@tastybites.com</p>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2026 Foodie. All Rights Reserved.</p>
+        <p>&copy; 2026 Tasty Bites. All Rights Reserved.</p>
     </footer>
 
+    <script src="script.js"></script>
+
 </body>
-    </html>
+</html>
