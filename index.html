@@ -3,115 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foodie - Home</title>
+    <title>Tasty Bites | Home</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            background-color: #f8f8f8;
-        }
-
-        /* Header */
-        header {
-            background-color: #ff4d4d;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: white;
-        }
-
-        .logo {
-            font-size: 22px;
-            font-weight: bold;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-weight: 500;
-        }
-
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-
-        /* Hero Section */
-        .hero {
-            height: 90vh;
-            background: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836") no-repeat center center/cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-            padding: 20px;
-        }
-
-        .hero-content {
-            background: rgba(0,0,0,0.5);
-            padding: 30px;
-            border-radius: 10px;
-        }
-
-        .hero h1 {
-            font-size: 40px;
-            margin-bottom: 10px;
-        }
-
-        .hero p {
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-
-        .hero a {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #ff4d4d;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        .hero a:hover {
-            background-color: #e60000;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <!-- Header -->
     <header>
-        <div class="logo">🍴 Foodie</div>
+        <div class="logo">🍴 Tasty Bites</div>
 
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="menu.html">Menu</a></li>
-                <li><a href="order.html">Order</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="order.html">Order</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -119,17 +27,45 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome to Foodie 🍔</h1>
-            <p>Delicious food delivered fresh to your doorstep</p>
-            <a href="menu.html">Explore Menu</a>
+        <h1>Welcome to Tasty Bites</h1>
+        <p>Delicious Food, Great Taste & Fast Service</p>
+
+        <a href="menu.html" class="btn">Explore Menu</a>
+    </section>
+
+    <!-- Featured Dishes -->
+    <section class="featured">
+        <h2>Our Special Dishes</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="images/pizza.jpg" alt="Pizza">
+                <h3>Cheese Pizza</h3>
+                <p>Loaded with fresh cheese and vegetables.</p>
+            </div>
+
+            <div class="card">
+                <img src="images/burger.jpg" alt="Burger">
+                <h3>Chicken Burger</h3>
+                <p>Juicy grilled burger with crispy fries.</p>
+            </div>
+
+            <div class="card">
+                <img src="images/pasta.jpg" alt="Pasta">
+                <h3>Italian Pasta</h3>
+                <p>Creamy white sauce pasta with herbs.</p>
+            </div>
+
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2026 Foodie. All Rights Reserved.</p>
+        <p>&copy; 2026 Tasty Bites. All Rights Reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
