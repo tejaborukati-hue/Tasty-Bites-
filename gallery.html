@@ -3,112 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - Foodie</title>
+    <title>Tasty Bites | Gallery</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            background-color: #f8f8f8;
-        }
-
-        /* Header */
-        header {
-            background-color: #ff4d4d;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: white;
-        }
-
-        .logo {
-            font-size: 22px;
-            font-weight: bold;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-weight: 500;
-        }
-
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-
-        /* Gallery Section */
-        .gallery {
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .gallery h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
-            color: #333;
-        }
-
-        .gallery p {
-            color: #666;
-            margin-bottom: 30px;
-        }
-
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        .gallery-grid img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 10px;
-            transition: 0.3s;
-        }
-
-        .gallery-grid img:hover {
-            transform: scale(1.05);
-        }
-
-        /* Footer */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 50px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <!-- Header -->
     <header>
-        <div class="logo">🍴 Foodie</div>
+        <div class="logo">🍴 Tasty Bites</div>
 
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="menu.html">Menu</a></li>
-                <li><a href="order.html">Order</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="order.html">Order</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -116,23 +27,44 @@
 
     <!-- Gallery Section -->
     <section class="gallery">
-        <h1>Our Food Gallery</h1>
-        <p>Delicious moments captured from our kitchen 🍕🍔🍟</p>
+        <h1>Food Gallery</h1>
+        <p>Take a look at some of our delicious dishes.</p>
 
-        <div class="gallery-grid">
-            <img src="https://source.unsplash.com/400x300/?pizza" alt="Pizza">
-            <img src="https://source.unsplash.com/400x300/?burger" alt="Burger">
-            <img src="https://source.unsplash.com/400x300/?pasta" alt="Pasta">
-            <img src="https://source.unsplash.com/400x300/?fries" alt="Fries">
-            <img src="https://source.unsplash.com/400x300/?dessert" alt="Dessert">
-            <img src="https://source.unsplash.com/400x300/?food" alt="Food">
+        <div class="gallery-container">
+
+            <div class="gallery-item">
+                <img src="images/pizza.jpg" alt="Pizza">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/burger.jpg" alt="Burger">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/pasta.jpg" alt="Pasta">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/fries.jpg" alt="French Fries">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/salad.jpg" alt="Salad">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/coffee.jpg" alt="Cold Coffee">
+            </div>
+
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2026 Foodie. All Rights Reserved.</p>
+        <p>&copy; 2026 Tasty Bites. All Rights Reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
